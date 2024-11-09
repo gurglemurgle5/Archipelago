@@ -1,0 +1,174 @@
+{
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+    "data": [
+        {
+            "name": "lightbulb",
+            "progression": true
+        },
+        {
+            "name": "television remote",
+            "progression": true
+        },
+        {
+            "name": "bottle of alcohol",
+            "progression": true
+        },
+        {
+            "name": "dry branch",
+            "progression": true
+        },
+        {
+            "name": "basement key",
+            "progression": true
+        },
+        {
+            "name": "camera",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "screwdriver",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "broken battery",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "metal rod",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "sponge",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "empty syringe",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "amber",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "strange journal",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "feather",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "bottle of dye",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "tube of water",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "seed",
+            "count": 0
+        },
+        {
+            "name": "wool",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "die",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "magnets",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "metal can",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "sissors",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "weird film",
+            "count": 0
+        },
+        {
+            "name": "lenses",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "glitter glue",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "photo of Niko",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "Kip's library card",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "gas mask",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "rubber gloves",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "novelty T-shirt",
+            "count": 0
+        },
+        {
+            "name": "dirt",
+            "count": 0
+        },
+        {
+            "name": "water pill",
+            "count": 0
+        },
+        {
+            "name": "clover",
+            "count": 0
+        },
+        {
+            "name": "memory disk",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "charged battery",
+            "progression": true,
+            "count": 0
+        },
+        {
+            "name": "music box",
+            "progression": true,
+            "count": 0
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
+    "data": [
+        {
+            "name": "Bedroom",
+            "region": "House"
+        },
+        {
+            "name": "Bathroom Plant",
+            "region": "House",
+            "requires": "|television remote|"
+        },
+        {
+            "name": "Fridge",
+            "region": "House",
+            "requires": "|television remote|"
+        },
+        {
+            "name": "Crack in the Floor",
+            "region": "House",
+            "requires": "|television remote| and ((|dry branch| and |bottle of alcohol|) or |lightbulb|)"
+        },
+        {
+            "name": "Basement",
+            "region": "House",
+            "requires": "|television remote| and |basement key|"
+        },
+        {
+            "name": "Victory",
+            "victory": true,
+            "requires": "|television remote| and |lightbulb|"
+        }
+    ]
+}

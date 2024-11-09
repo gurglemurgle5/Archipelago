@@ -1,0 +1,30 @@
+{
+    "House": {
+        "starting": true,
+        "connects_to": [
+            "The Barrens"
+        ]
+    },
+    "The Barrens": {
+        "requires": "|television remote| and |lightbulb|",
+        "connects_to": [
+            "The Glen"
+        ]
+    },
+    "The Glen": {
+        "_comment": "finish requires",
+        "requires": "(|charged battery| or (|broken battery| and |camera| and |screwdriver|))",
+        "connects_to": [
+            "The Refuge"
+        ]
+    },
+    "The Refuge": {
+        "requires": "|feather| and |bottle of dye|",
+        "connects_to": [
+            "The Tower"
+        ]
+    },
+    "The Tower": {
+        "requires": "|strange journal| and |feather| and |die|"
+    }
+}
