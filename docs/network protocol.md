@@ -300,6 +300,7 @@ along.
 These packets are sent purely from client to server. They are not accepted by clients.
 
 * [Connect](#Connect)
+* [ConnectUpdate](#ConnectUpdate)
 * [Sync](#Sync)
 * [LocationChecks](#LocationChecks)
 * [LocationScouts](#LocationScouts)
@@ -436,6 +437,7 @@ Some special keys exist with specific return data, all of them have the prefix `
 | item_name_groups_{game_name}     | dict\[str, list\[str\]\]      | item_name_groups belonging to the requested game.     |
 | location_name_groups_{game_name} | dict\[str, list\[str\]\]      | location_name_groups belonging to the requested game. |
 | client_status_{team}_{slot}      | [ClientStatus](#ClientStatus) | The current game status of the requested player.      |
+| race_mode                        | int                           | 0 if race mode is disabled, and 1 if it's enabled.    |
 
 ### Set
 Used to write data to the server's data storage, that data can then be shared across worlds or just saved for later.
