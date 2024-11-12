@@ -1,37 +1,8 @@
 {
     "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
-    "game": "OneShot World Machine Edition",
+    "game": "OneShot: World Machine Edition",
     "creator": "Gurglemurgle",
     "filler_item_name": "idk insert filler item here",
-    "NOPE_starting_items": [
-        {
-            "items": [
-                "Ryu",
-                "Akuma"
-            ]
-        },
-        {
-            "item_categories": [
-                "Left Side"
-            ],
-            "random": 1
-        },
-        {
-            "items": [
-                "Wolverine",
-                "Storm",
-                "Phoenix"
-            ],
-            "random": 1
-        },
-        {
-            "item_categories": [
-                "Trash"
-            ]
-        },
-        {
-            "random": 3
-        }
-    ],
+    "starting_items": [],
     "death_link": false
 }
