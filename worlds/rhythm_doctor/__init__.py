@@ -87,11 +87,14 @@ class RhythmDoctorWorld(World):
         create_items(self)
 
     def create_item(self, name: str) -> RhythmDoctorItem:
-        def get_classification() -> ItemClassification:
-            # TODO: Get real item classification
+        def get_classification(name: str) -> ItemClassification:
+            if name in [item.name for item in FILLER_TRAPS]:
+                return ItemClassification.trap
+            if name in [item.name for item in FILLER_JUNK] or name in [item.name for item in FILLER_POWERUPS]:
+                return ItemClassification.filler
             return ItemClassification.progression
 
-        return RhythmDoctorItem(name, get_classification(), self.item_name_to_id[name], self.player)
+        return RhythmDoctorItem(name, get_classification(name), self.item_name_to_id[name], self.player)
 
     def create_filler(self) -> RhythmDoctorItem:
         # TODO: Currently ignores user input on trap preferences
