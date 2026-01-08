@@ -88,15 +88,15 @@ class RhythmDoctorWorld(World):
 
     def create_item(self, name: str) -> RhythmDoctorItem:
         def get_classification(name: str) -> ItemClassification:
-            if name in [item.name for item in FILLER_TRAPS]:
+            if name in self.local_item_name_groups["Traps"]:
                 return ItemClassification.trap
-            if name in [item.name for item in FILLER_JUNK] or name in [item.name for item in FILLER_POWERUPS]:
+            if name in self.local_item_name_groups["Junk"] or name in self.local_item_name_groups["Powerups"]:
                 return ItemClassification.filler
             return ItemClassification.progression
 
         return RhythmDoctorItem(name, get_classification(name), self.item_name_to_id[name], self.player)
 
-    def create_filler(self) -> RhythmDoctorItem:
+    def get_filler_item_name(self) -> str:
         # TODO: Currently ignores user input on trap preferences
         #       i.e. self.options.enable_chilli_speed_trap
         # Check which filler type to get
@@ -126,22 +126,14 @@ class RhythmDoctorWorld(World):
         if not self.options.enable_ice_speed_powerups.value:
             powerup_pool.remove("Ice Speed Powerup")
 
-        classification = ItemClassification.filler
         if result < self.options.trap_chance.value:
             pool = trap_pool
-            classification = ItemClassification.trap
         elif result < self.options.trap_chance.value + self.options.powerup_chance.value:
             pool = powerup_pool
         else:
             pool = self.item_name_groups["Junk"]
 
-        item_name = self.random.choice(list(pool))
-        item = self.create_item(item_name)
-        item.classification = classification
-        return item
-
-    def get_filler_item_name(self) -> str:
-        return "A Bit of Rhythm"
+        return self.random.choice(list(pool))
 
     def generate_early(self) -> None:
         if (self.options.trap_chance.value + self.options.powerup_chance.value) > 100:
